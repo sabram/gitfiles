@@ -3,3 +3,22 @@
 [user]
 	name = sabram
 	email = sabram@lendingclub.com
+[alias]
+        br = branch
+        co = checkout
+        st = status
+        cp = cherry-pick
+        lg = log --color --graph --pretty=format:'%Cred%h%Creset - %C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'
+        lgs = log --color --graph --pretty=format:'%Cred%h%Creset - %cn -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'
+        lgme = log --color --graph --pretty=format:'%Cred%an %C(yellow)%h %Cred%ad %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'  --author="sabram"
+
+        in = fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+
+        ###If no upstream branch defined (e.g. a new branch you haven't push yet, you can just do: git lg master.. OR git lg master..<yourbranch>
+        out = log --pretty=oneline --abbrev-commit --graph @{u}..
+        out2 = log --pretty=oneline --abbrev-commit --graph develop..
+        out3 = log --pretty=oneline --abbrev-commit --graph development..
+        resetsoft=reset --soft HEAD^
+        resetmixed=reset --mixed HEAD^
+        resethard=reset --hard HEAD^
+
