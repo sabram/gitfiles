@@ -1,0 +1,5 @@
+[alias]
+	co = checkout
+[user]
+	name = sabram
+	email = sabram@lendingclub.com
