@@ -6,7 +6,7 @@ alias glog='git log origin/development..development'
 alias glog2='git log origin/develop..develop'
 alias gdiff='git diff origin/development..development'
 alias gdiff2='git diff origin/develop..develop'
-alias vigc="vi ~/.gitconfig"
+alias vigc="vi /Users/sabram/dev/gitfiles/.gitconfig"
 alias catgc="cat /Users/sabram/dev/gitfiles/.gitconfig"
 alias s='git status'
 
