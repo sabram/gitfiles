@@ -1,5 +1,6 @@
 #Git shortcuts. Source from your bash profile.
 
+#Pull git-completion.bash from https://github.com/git/git/blob/master/contrib/completion/git-completion.bash
 source ~/git-completion.bash
 
 alias glog='git log origin/development..development'
