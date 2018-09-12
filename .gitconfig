@@ -10,7 +10,7 @@
         lgs = log --color --graph --pretty=format:'%Cred%h%Creset - %cn -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'
         lgme = log --color --graph --pretty=format:'%Cred%an %C(yellow)%h %Cred%ad %Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)'  --author="sabram"
 
-        in = fetch && git log --pretty=oneline --abbrev-commit --graph ..@{u}
+        in = fetch && git log ..@{u}
 
         ###If no upstream branch defined (e.g. a new branch you haven't push yet, you can just do: git lg master.. OR git lg master..<yourbranch>
         out = log --pretty=oneline --abbrev-commit --graph @{u}..
